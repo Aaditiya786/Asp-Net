@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "Subject List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New heading for Subject List</h2>
+
+
+<ul>
+    <li>@Html.ActionLink("Math Details", "Details", new { id = 1 })</li>
+    <li>@Html.ActionLink("Science Details", "Details", new { id = 2 })</li>
+</ul>
+
+<div class="mt-3">
+    @Html.ActionLink("About Our Subjects", "About", null, new { @class = "btn btn-primary" })
+</div>
